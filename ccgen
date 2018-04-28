@@ -1,0 +1,29 @@
+#!/bin/bash
+echo -e "\033[0;35m--------------------------------------------------\033[0m"
+echo -e "\033[1;31m               STUDIO HOWEN"
+echo -e "\033[0;35m--------------------------------------------------\033[0m"
+tput setaf 0 ; tput bold ; read -n 1 -s -p "Presione Cualquier tecla para continuar..." ; echo "" ; echo "" ; tput sgr0
+# ACTUALIZACION #
+clear
+echo -e "\033[0;35m-[ 00% ]\033[0m"
+apt-get update -y 1> /dev/null 2> /dev/stdout
+clear
+echo -e "\033[0;35m--------------[ 10% ]\033[0m"
+apt-get upgrade -y 1> /dev/null 2> /dev/stdout
+clear
+echo -e "\033[0;35m---------------------------------[ 30% ]\033[0m"
+apt-get install git 1> /dev/null 2> /dev/stdout
+clear
+echo -e "\033[0;35m--------------------------------------------------[ 50% ]\033[0m"
+apt-get install python -y 1> /dev/null 2> /dev/stdout
+clear
+echo -e "\033[0;35m----------------------------------------------------------------------------------------------------------------[ 100% ]\033[0m"
+rm VPS.HOWEN1.sh
+clear
+# INSTALANDO COMPONENTES #
+echo -e "\033[0;35m--------------------------------------------------\033[0m"
+figlet ....HOWEN....
+echo -e "\033[0;35m--------------------------------------------------\033[0m"
+sleep 2
+tput setaf 2 ; tput bold ; echo "                  INSTALANDO CCGEN"; tput sgr0
+    git clone https://github.com/kuurtb/ccgen
